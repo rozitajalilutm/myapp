@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- tutup sebab guna themes <link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" href="css/themes/rozi2.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<style>
+.ui-icon-myicon:after{
+background-image: url("img/call1.png"); 
+background-size: 30px 30px;
+}
+</style>
+</head>
+
+<body>
+<!--panel luar-->
+<script>
+	$(function() {
+		$('#mypanel').panel().enhanceWithin();
+	});
+</script>
+
+<div data-role="panel" id="mypanel" data-theme="b">
+    <!-- panel content goes here -->
+	<h3>Menu</h3>
+	<ul data-role="listview" data-inset="true">
+		<li><a href="#pg1">Menu Utama</a></li>
+		<li><a href="#pg2">Agihan V-Siri</a></li>
+		<li><a href="#pg3">Pembangun</a></li>
+	</ul>
+</div>
+
+
+<!-- page 1 -->
+<div data-role="page" id="pg1" data-theme="a">
+	<!-- /header -->
+	<div data-role="header" data-position="fixed">
+	<a href="#mypanel" data-rel="panel" data-icons="bars">Menu</a>
+	<h1> VS Apps (Versi 1.0)</h1>
+	</div>
+	<!-- /header -->
+	<!-- /content -->
+	<div role="main" class="ui-content">
+	<p style="text-align :center;">
+		<img src="img/minivsapp.jpg" alt="click here" width="100%" style="display:block;margin:0 auto;">
+	</p>
+	<!-- tutup kejap
+	<a href="#pg2" class="ui-btn ui-corner-all" data-transition="slideup"> PAGE 2</a>
+		<a href="#pg3" class="ui-btn ui-corner-all" data-transition="turn">PAGE 3</a> -->
+	</div>
+	<!-- /content -->
+	<!-- /footer -->
+	<div data-role="footer" data-position="fixed">
+	 <div data-role="navbar">
+        <ul>
+            <li><a data-icon="home" class="ui-btn-active ui-state-persist" href="#pg1">Pg1</a></li>
+            <li><a data-icon="star" href="#pg2">Pg2</a></li>
+            <li><a data-icon="alert" href="#pg3">Pg3</a></li>
+        </ul>
+    </div><!-- /navbar -->
+		<h4><a href=http://www.k-economy.utm.my> www.k-economy.utm.my </a></h4>
+	</div>
+	<!-- /footer -->	
+</div><!-- /page1 -->
+
+<!-- page 2 -->
+<div data-role="page"id="pg2">
+	<!-- /header -->
+	<div data-role="header" data-add-back-btn="true" data-position="fixed">
+	<a href="#mypanel" data-rel="panel" data-icons="bars">Menu</a>
+	<a href="#" data-rel="back" class="ui-btn-right" data-icon="carat-l">Back</a>
+	<h1>VS Apps (Versi 1.0)</h1>
+	</div>
+	<!-- /header -->
+	
+	<!-- /content -->
+	<div role="main" class="ui-content">
+	<h3><b>Agihan V-Siri GUP 2014</b></h3>
+	<div data-role="collapsibleset"> <!--collapsibleset -->
+	<!-- /collapsible -->
+	<div data-role="collapsible" datacollpsible="false">
+		<h4>V11000</h4>
+		
+		<p style="text-align :justify;">
+		<h3>V11000 (Saguhati, elaun, elaun lebih masa, gaji, dan tunggakan gaji).</h3>
+		<ul><li>
+		RO/ARO/RA/RSG/SPB</li><li>
+		Upah (tidak dibenarkan membayar upah melebihi 2 kali bagi setiap individu di bawah projek yang sama)</li><li>
+		Jadual Kadar Bayaran Lantikan Mahasiswa UTM </li></ul></br>
+			<img src="img/jadual.jpg" width="80%" style="display:block;margin:0 auto;"></br>
+	</div>
+	<div data-role="collapsible">
+		<h4>V21000</h4>
+		<p style="text-align:justify;">
+		<h3>V21000(Perjalanan dan Pengangkutan)</h3>
+		Perjalanan ke luar negara (berdasarkan kepada kelulusan Universiti) perlu memenuhi kriteria di bawah:</br>
+		<ol><li>
+		Perjalanan ke luar negara dibenarkan tertakluk kepada kecukupan geran yang telah dipohon. 
+		Ketua Projek dan ahli kumpulan sahaja yang dibenarkan bagi tujuan tersebut. </li><li>
+		Pembantu Penyelidik hanya dibenarkan untuk mengikuti persidangan,seminar atau bengkel yang berkaitan dengan
+		penyelidikan mereka di dalam negara sahaja.</li><li>
+		Perjalanan ke luar negara yang dibenarkan ialah yang bertujuan untuk membentang kertas kerja persidangan/ 
+		simposium (pembentang sahaja), menerima anugerah berkaitan penyelidikan dan menyampaikan ucaptama (keynote speaker) 
+		yang diluluskan oleh pihak universiti.</li><li>
+		Penyelidik yang keluar negara mestilah telah mempunyai jurnal IF dan beliau adalah ‘First UTM Author’ atau 
+		‘Corresponding Author’ di dalam penerbitan jurnal tersebut.</li><li>
+		Perjalanan ke luar negara mestilah juga mengikut peraturan universiti yang berkuatkuasa dari semasa ke semasa.</li><li>
+		Jumlah perbelanjaan untuk perjalanan tidak boleh melebihi <b>20 peratus (20%)</b> daripada jumlah keseluruhan projek</li></ol>
+		</p>
+		</div>
+	<div data-role="collapsible">
+		<h4>V 24000</h4>
+		<p style="text-align:justify;">
+		<h3>V24000(Sewaan)</h3>
+		<ul><li>Hanya dibenarkan untuk bangunan, peralatan, pengangkutan,utiliti dan barangan lain yang terlibat secara langsung dengan penyelidikan.</li></ul>
+		</p>
+	</div>
+	<div data-role="collapsible">
+		<h4>V26000</h4>
+		<p style="text-align:justify;">
+		<h3>V26000(Bekalan dan Bahan Penyelidikan)</h3><ul><li>
+		Hanya perbelanjaan <b>bekalan dan bahan</b> yang berkaitan dengan penyelidikan sahaja dibenarkan.</li></ul>
+		</p>
+	</div>	
+	<div data-role="collapsible">
+		<h4>V28000</h4>
+		<p style="text-align:justify;">
+		<h3>V28000 (Baik pulih kecil dan ubahsuai)</h3>
+		<ul>
+		<li>Hanya perbelanjaan untuk baik pulih dan pengubahsuaian yang kecil terhadap bangunan, makmal, peralatan atau lain-lain barang yang berkaitan dengan
+		penyelidikan dibenarkan.Kos penyelenggaraan peralatan sedia ada semasa projek dilaksanakan adalah dibenarkan.Selepas projek selesai kos penyelenggaraan
+		ini tidak akan ditanggung lagi melalui geran ini.</li>
+		<li>Ubah suai yang melibatkan kerja-kerja pendawaian elektrik dan pengubahsuaian ruang perlu mendapat kelulusan daripada PTJ terlebih dahulu 
+		sebelum dimajukan ke Pejabat Harta Bina melalui RMC.</li>
+		<li>Bagi pendawaian yang melibatkan talian internet perlu mendapatkan kelulusan daripada PTJ terlebih dahulu sebelum dimajukan ke RMC.</li></ul>
+		</p>
+	</div>
+	<div data-role="collapsible">
+		<h4>V29000</h4>
+		<p style="text-align:justify;">
+		<h3> V29000 (Perkhidmatan Ikhtisas)</h3>
+		<ul>
+		<li>Vot ini meliputi lain-lain perkhidmatan termasuk percetakan, hospitaliti, honorarium, perkhidmatan profesional, konsultansi, penggunaan komputer,
+		pemprosesan data dan lain-lain perkhidmatan yang berkaitan dengan projek penyelidikan.</li>
+		<li>Bayaran untuk menganggotai satu (1) badan professional tempatan dan satu (1) badan professional antarabangsa mengikut bidang bagi setiap geran.</li>
+		<li> Bayaran yang dibenarkan adalah bayaran pendaftaran dan yuran tahunan. Sila rujuk kepada Garis Panduan Pembayaran Upah untuk pembayaran upah kepakaran.</li>
+		</ul>
+		</p>
+	</div>
+	<div data-role="collapsible">
+		<h4>V35000</h4>
+		<p style="text-align:justify;">
+		<h3>V35000 (Aksesori dan Peralatan)</h3>
+		<ul>
+		<li>Hanya pembelian <b>harta dan inventori yang dinyatakan di dalam proposal</b> (termasuk meningkatkan keupayaan peralatan sedia ada) yang berkaitan dengan projek penyelidikan dibenarkan. Sila beri senarai dan justifikasi alat yang dipohon.
+		</li><li>Jumlah perbelanjaan tidak boleh melebihi <b>40 Peratus(40%)</b>.</li>
+		</ul>
+		</p>
+	</div>
+	
+	</div><!--collapsibleset -->
+		<!-- /collapsible -->
+<!--
+		<a href="#pg1" class="ui-btn ui-corner-all" data-transition="slideup">MAIN</a>
+		<a href="#pg3" class="ui-btn ui-corner-all" data-transition="turn">PAGE 3</a> -->
+</div>
+	<!-- /content -->
+	
+	<!-- /footer -->
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+        <ul>
+            <li><a data-icon="home" href="#pg1">Pg1</a></li>
+            <li><a data-icon="star" class="ui-btn-active ui-state-persist"href="#pg2">Pg2</a></li>
+            <li><a data-icon="alert" href="#pg3">Pg3</a></li>
+        </ul>
+    </div><!-- /navbar -->
+		<h4><a href=http://www.k-economy.utm.my> www.k-economy.utm.my </a></h4>
+	</div>
+	<!-- /footer -->	
+</div><!-- /page2 -->
+
+
+<!-- page 3 -->
+<div data-role="page"id="pg3" >
+	<!-- /header -->
+	<div data-role="header" data-add-back-btn="true" data-position="fixed">
+	<a href="#mypanel" data-rel="panel" data-icons="bars">Menu</a>
+	<a href="#"data-rel="back" class="ui-btn-right" data-icon="carat-l">Back</a>
+		<h1>VS Apps (Versi 1.0)</h1>
+	</div>
+	<!-- /header -->
+	<!-- /content -->
+	<div role="main" class="ui-content">
+	<h3><b>Pembangun</b></h3>
+	<p style="text-align:justify;"> 
+		Aplikasi mudah ini dibangunkan dalam jangkamasa yang singkat (2 jam).</br>
+		Tujuan utamanya sebagai platform rujukan mudah alih bagi penyelidik dan penilai 
+		geran universiti penyelidikan UTM. Panduan ini diadaptasi dari peraturan yang dikeluarkan oleh
+		Pusat Pengurusan Penyelidikan, UTM. Pembanguanan antaramuka tidak ditekankan bagi aplikasi
+		ini. Sebarang maklumbalas berkaitan aplikasi ini amat dialukan.</i>
+	<ul data-role="listview" data-inset="true">
+	<li>
+		<a href="#pop1" data-rel="popup">
+		<img src="img/rozita.jpg" />
+		<h3>Rozita Abdul Jalil</h3>
+		<p>Pegawai Penyelidik</br>
+		Pengaturcara / Koordinator</p>
+		
+		</a>
+	</li>
+	<li>
+		<a href="#pop2" data-rel="popup">
+		<img src="img/sapiah.jpg"  />
+		<h3>Sapiah Sulaiman</h3>
+		<p>Pegawai Penyelidik</br>
+		Pengaturcara</p>
+		</a>
+	</li>
+	<li>
+		<a href="#pop3" data-rel="popup">
+		<img src="img/shah.jpg"/>
+		<h3>Dr.Shaharuddin Md. Salleh</h3>
+		<p>Pensyarah </br>
+		Penasihat Projek</p>
+		</a>
+	</li>
+	<li>
+		<a href="#pop3" data-rel="popup">
+		<img src="img/ali.jpg">
+		<h3>Prof.Dr. Ali Selamat </h3>
+		<p>Dekan Penyelidikan</br>
+		Penasihat Projek</p>
+		</a>
+	</li>
+	</ul>
+	
+	<!-- popup id=pop1 utk setiap list  -->
+		<div data-role="popup" id="pop1"style="max-width:400px;">
+			<ul data-role="listview">
+				<li>
+				<a href ="tel:+60127151391" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone"> Call</a>
+				</li>
+				<li>
+				<a href ="sms://+60127151391" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit">SMS</a>
+				</li>
+				<li>
+				<a href ="mailto:rozitajalil@utm.my"class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-mail">Email</a>
+				</li>
+			</ul>
+		</div>
+	<!-- popup id=pop2 utk setiap list  -->
+		<div data-role="popup" id="pop2"style="max-width:400px;">
+			<ul data-role="listview">
+			<li>
+				<a href ="tel:+60197540079" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone"> Call</a>
+				</li>
+				<li>
+				<a href ="sms://+60197540079" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit">SMS</a>
+				</li>
+				<li>
+				<a href ="mailto:sapiah@utm.my"class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-mail">Email</a>
+				</li>
+			</ul>
+		</div>	
+		
+	<!-- popup id=pop3 utk setiap list  -->
+		<div data-role="popup" id="pop3"style="max-width:400px;">
+			<ul data-role="listview">
+				<li>
+				<a href ="tel:+60177571759" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone"> Call</a>
+				</li>
+				<li>
+				<a href ="sms://+60177571759" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit">SMS</a>
+				</li>
+				<li>
+				<a href ="mailto:p-shah@utm.my"class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-mail">Email</a>
+				</li>
+			</ul>
+		</div>		
+<!-- popup id=pop3 utk setiap list  -->
+		<div data-role="popup" id="pop3"style="max-width:400px;">
+			<ul data-role="listview">
+				<li>
+				<a href ="tel:+6075531005" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone"> Call</a>
+				</li>
+				<li>
+				<a href ="sms://+60197363500" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit">SMS</a>
+				</li>
+				<li>
+				<a href ="mailto:deanrake@utm.my"class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-mail">Email</a>
+				</li>
+			</ul>
+		</div>			
+	<!-- break -->
+	<br/>
+		
+	<!--break	<a href="#pg1" class="ui-btn ui-corner-all" data-transition="slideup">MAIN</a>
+		<a href="#pg2" class="ui-btn ui-corner-all" data-transition="turn">PAGE 2</a>     -->
+	</div>
+	<!-- /content -->
+	
+	<!-- /footer -->
+	<div data-role="footer" data-position="fixed"> <!--data position untuk menetapkan supaya footer tak gerak -->
+	<!--navbar widget declaration -->
+	<div data-role="navbar"> 
+        <ul>
+            <li><a data-icon="home" href="#pg1">Pg1</a></li>
+            <li><a data-icon="star" href="#pg2">Pg2</a></li>
+            <li><a data-icon="alert" class="ui-btn-active ui-state-persist" href="#pg3">Pg3</a></li>
+        </ul>
+    </div><!-- /navbar -->
+	
+		<h4><a href=http://www.k-economy.utm.my> www.k-economy.utm.my </a></h4>
+	</div>
+	<!-- /footer -->	
+</div><!-- /page3 -->
+
+
+<!-- page 4 -->
+<div data-role="page"id="pg4" data-add-back-btn="true" data-position="fixed" >
+	<!-- /header -->
+	<div data-role="header">
+		<h1>PAGE 4</h1>
+	</div>
+	<!-- /header -->
+	
+	<!-- /content -->
+	<div role="main" class="ui-content">
+		<p>PAGE 4</p>
+		<p>... <br/> </p>
+		<p>DAY 4 CONTENT  <br/> </p>
+		<a href="#pg1" class="ui-btn ui-corner-all">MAIN</a>
+		<a href="#pg2" class="ui-btn ui-corner-all">PAGE 2</a>
+	</div>
+	<!-- /content -->
+	
+	<!-- /footer -->
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+	<!-- /footer -->	
+</div><!-- /page2 -->
+</body>
+
+</html>
